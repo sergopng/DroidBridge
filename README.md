@@ -8,11 +8,11 @@
 </div>
 
 <p align="center">
-  <a href="docs/screenshots/file-manager.png"><img src="docs/screenshots/file-manager.png" width="940" alt="DroidBridge file manager with Mac and Android panes, a calculated folder size and the ADB and MTP switch"></a><br>
+  <a href="docs/screenshots/file-manager-en.png"><img src="docs/screenshots/file-manager-en.png" width="940" alt="DroidBridge file manager with Mac and Android panes, a calculated folder size and the ADB and MTP switch"></a><br>
   <sub>Mac on the left, Android on the right. The sample Photos folder shows its size after calculation.</sub>
 </p>
 
-> **App language:** DroidBridge 1.6.1 has a Russian interface. This README is available in English and Russian. The help text supplied by scrcpy appears in English.
+> **App language:** These screenshots show an English preview with demo data. The public DroidBridge 1.6.1 build has a Russian interface.
 
 ## Why I built it
 
@@ -34,18 +34,18 @@ I wanted the workflow I knew from Total Commander: two file panes, keyboard shor
 ### Transfer queue
 
 <p align="center">
-  <a href="docs/screenshots/transfer-queue.png"><img src="docs/screenshots/transfer-queue.png" width="650" alt="DroidBridge copying Trip-video.mp4 with a progress bar at 57 percent and about 14 seconds remaining"></a><br>
+  <a href="docs/screenshots/transfer-queue-en.png"><img src="docs/screenshots/transfer-queue-en.png" width="650" alt="DroidBridge copying Trip-video.mp4 with a progress bar at 22 percent and about 25 seconds remaining"></a><br>
   <sub>The queue shows the active file, progress and estimated time remaining.</sub>
 </p>
 
 ### scrcpy settings
 
 <p align="center">
-  <a href="docs/screenshots/scrcpy-settings.png"><img src="docs/screenshots/scrcpy-settings.png" width="650" alt="DroidBridge scrcpy settings with video bitrate selected and a value picker"></a><br>
+  <a href="docs/screenshots/scrcpy-settings-en.png"><img src="docs/screenshots/scrcpy-settings-en.png" width="650" alt="DroidBridge scrcpy settings with video bitrate selected and a value picker"></a><br>
   <sub>Choose a video bitrate, frame rate or codec from the settings window.</sub>
 </p>
 
-Open **DroidBridge → Настройки → scrcpy**. Start in **Основные** (Common), or search by name or CLI flag. Common options have menus, such as 60 fps, H.265, and MKV. Choose **По умолчанию** (Default) to let scrcpy decide or **Своё значение…** (Custom value) to enter a value. Changes apply the next time scrcpy starts.
+In the public build, open **DroidBridge → Настройки → scrcpy**. Start in **Основные** (General), or search by name or CLI flag. Common options have menus, such as 60 fps, H.265, and MKV. Choose **По умолчанию** (Default) to let scrcpy decide or **Своё значение…** (Custom value) to enter a value. Changes apply the next time scrcpy starts.
 
 DroidBridge reads the full option catalog from the selected version's `scrcpy --help`. Linux-only options are shown for reference. The corresponding diagnostic commands can list available displays, cameras, and encoders. Support for these features depends on the phone and its Android version.
 
