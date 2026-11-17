@@ -1,0 +1,34 @@
+--- a/libmtp-1.1.22/src/gphoto2-endian.h
++++ b/libmtp-1.1.22/src/gphoto2-endian.h
+@@ -8,10 +8,9 @@
+ #include <arpa/inet.h>
+ 
+ /* Define generic byte swapping functions */
+-#include <byteswap.h>
+-#define swap16(x) bswap_16(x)
+-#define swap32(x) bswap_32(x)
+-#define swap64(x) bswap_64(x)
++#define swap16(x) __builtin_bswap16(x)
++#define swap32(x) __builtin_bswap32(x)
++#define swap64(x) __builtin_bswap64(x)
+ 
+ /* The byte swapping macros have the form: */
+ /*   EENN[a]toh or htoEENN[a] where EE is be (big endian) or */
+--- a/libmtp-1.1.22/src/libusb1-glue.c
++++ b/libmtp-1.1.22/src/libusb1-glue.c
+@@ -2100,6 +2100,7 @@
+     clear_stall(ptp_usb);
+     libusb_release_interface(ptp_usb->handle, (int) ptp_usb->interface);
+   }
++#ifndef __APPLE__
+   if (FLAG_FORCE_RESET_ON_CLOSE(ptp_usb)) {
+     /*
+      * Some devices really love to get reset after being
+@@ -2110,6 +2111,7 @@
+      */
+     libusb_reset_device (ptp_usb->handle);
+   }
++#endif
+   libusb_close(ptp_usb->handle);
+ }
+ 

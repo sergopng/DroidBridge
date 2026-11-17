@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="local.droidbridge.helper">
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+    <application android:label="DroidBridge" android:theme="@android:style/Theme.Material.Light.Dialog.Alert" android:allowBackup="false">
+        <activity android:name=".Actions" android:exported="true" android:permission="android.permission.DUMP" />
+        <activity android:name=".OpenShortcut" android:exported="true" />
+        <provider android:name=".BridgeProvider" android:authorities="local.droidbridge.helper" android:exported="true" android:readPermission="android.permission.DUMP" android:writePermission="android.permission.DUMP" />
+    </application>
+</manifest>

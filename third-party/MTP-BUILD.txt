@@ -1,0 +1,6 @@
+DroidBridge uses dynamically linked libmtp and libusb. This archive contains
+the corresponding library sources. Extract both archives, apply macOS.patch
+with patch -p1, then run bash build-libs.sh arm64 x86_64 with Apple Command
+Line Tools. The outputs are vendor-<architecture>/lib/*.dylib. The
+application loads the libraries from Contents/Frameworks. The two upstream
+license texts are in the source archives and Contents/Resources.

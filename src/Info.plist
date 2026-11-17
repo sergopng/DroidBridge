@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "https://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+    <key>CFBundleName</key><string>DroidBridge</string>
+    <key>CFBundleDisplayName</key><string>DroidBridge</string>
+    <key>CFBundleIdentifier</key><string>local.droidbridge.mac</string>
+    <key>CFBundleExecutable</key><string>DroidBridge</string>
+    <key>CFBundleIconFile</key><string>AppIcon.icns</string>
+    <key>CFBundlePackageType</key><string>APPL</string>
+    <key>CFBundleShortVersionString</key><string>1.6.1</string>
+    <key>CFBundleVersion</key><string>8</string>
+    <key>CFBundleDevelopmentRegion</key><string>ru</string>
+    <key>LSMinimumSystemVersion</key><string>14.4</string>
+    <key>LSApplicationCategoryType</key><string>public.app-category.utilities</string>
+    <key>NSHighResolutionCapable</key><true/>
+    <key>NSDownloadsFolderUsageDescription</key><string>DroidBridge открывает выбранные файлы и папки для передачи на Android.</string>
+    <key>NSLocalNetworkUsageDescription</key><string>DroidBridge подключается к Android по беспроводной отладке.</string>
+    <key>NSBonjourServices</key><array><string>_adb-tls-connect._tcp</string><string>_adb-tls-pairing._tcp</string></array>
+</dict></plist>
